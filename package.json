@@ -4,13 +4,12 @@
   "description": "eCommerce web application built with MERN Stack.",
   "type": "module",
   "main": "server.js",
-"scripts": {
-  "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-  "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "server": "nodemon backend/server.js",
-  "client": "npm start --prefix frontend"
-},
-
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend"
+  },
   "author": "Ajay Boro",
   "license": "MIT",
   "dependencies": {
@@ -29,6 +28,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.1.0"
   }
 }
